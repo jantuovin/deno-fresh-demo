@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+
+  --dark-mode-btn-bg-color: black;
+  --dark-mode-btn-text-color: white;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+
+  --dark-mode-btn-bg-color: white;
+  --dark-mode-btn-text-color: black;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  container-type: inline-size;
+}
+
+section {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+@container (min-width: 720px) {
+  main section {
+    width: 720px;
+  }
+}
+
+section.dark-mode-switch-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  border: none;
+}
+
+.dark-mode-switch-container button {
+  padding: 0.75rem 1rem;
+  background-color: var(--dark-mode-btn-bg-color);
+  color: var(--dark-mode-btn-text-color);
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+img {
+  width: 6rem;
+  margin: 0 1rem;
+  float: left;
+}
+
+p {
+  text-align: justify;
+}
