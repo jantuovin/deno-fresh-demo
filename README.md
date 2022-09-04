@@ -2,7 +2,9 @@
 
 Testing Deno + fresh + islands architecture + dark mode + container queries for fun :)
 
-### Usage
+Check out the project livet at [Deno deploy](https://deno.com/deploy): https://jantuovin-deno-fresh-demo.deno.dev/
+
+## Local usage
 
 Start the project:
 
